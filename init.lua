@@ -104,7 +104,7 @@ vim.o.number = true
 --  Experiment for yourself to see if you like it!
 -- vim.o.relativenumber = true
 
-vim.opt.wildmode = 'list:longest,full'
+vim.opt.wildmode = 'list:longest'
 
 -- Enable mouse mode, can be useful for resizing splits for example!
 vim.o.mouse = 'a'
@@ -878,6 +878,8 @@ require('lazy').setup({
       },
 
       snippets = { preset = 'luasnip' },
+
+      cmdline = { enabled = false },
 
       -- Blink.cmp includes an optional, recommended rust fuzzy matcher,
       -- which automatically downloads a prebuilt binary when enabled.
